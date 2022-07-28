@@ -34,27 +34,26 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== QUALIFICATION TABS ====================*/
 
-const tabs = document.querySelectorAll('[data-target]'),
-      tabContents = document.querySelectorAll('[data-content]')
+// const tabs = document.querySelectorAll('[data-target]'),
+//       tabContents = document.querySelectorAll('[data-content]')
 
-tabs.forEach(tab =>{
-    tab.addEventListener('click', () =>{
-        const target = document.querySelector(tab.dataset.target)
+// tabs.forEach(tab =>{
+//     tab.addEventListener('click', () =>{
+//         const target = document.querySelector(tab.dataset.target)
 
-        tabContents.forEach(tabContent =>{
-            tabContent.classList.remove('qualification__active')
-        })
-        target.classList.add('qualification__active')
+//         tabContents.forEach(tabContent =>{
+//             tabContent.classList.remove('qualification__active')
+//         })
+//         target.classList.add('qualification__active')
 
-        tabs.forEach(tab => {
-            tab.classList.remove('qualification__active')
-        })
-        tab.classList.add('qualification__active')
-    })
-})      
+//         tabs.forEach(tab => {
+//             tab.classList.remove('qualification__active')
+//         })
+//         tab.classList.add('qualification__active')
+//     })
+// })      
 
 
-/*==================== SERVICES MODAL ====================*/
 
 
 /*==================== PORTFOLIO SWIPER  ====================*/
@@ -116,3 +115,25 @@ function scrollUp(){
     if(this.scrollY >= 460) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
   }
   window.addEventListener('scroll', scrollUp)
+
+
+  function portfolio1(){
+    var modal = document.getElementById("myModal");
+    modal.style.display = "block";
+
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+  }
