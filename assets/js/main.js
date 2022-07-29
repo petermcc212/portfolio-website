@@ -117,8 +117,9 @@ function scrollUp(){
   window.addEventListener('scroll', scrollUp)
 
 
+  /*==================== PROJECT MODAL ====================*/ 
   function portfolio1(){
-    var modal = document.getElementById("myModal");
+    var modal = document.getElementById("firstProject");
     modal.style.display = "block";
 
 

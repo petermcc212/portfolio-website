@@ -524,6 +524,10 @@ img {
   margin-bottom: var(--mb-0-75);
 }
 
+.portfolio__subtitle{
+  font-weight: bold;
+}
+
 .portfolio__button:hover .button__icon{
   transform: translate(.5rem);
 }
@@ -563,6 +567,9 @@ img {
 .swiper-pagination-bullet{
   outline: none;
 }
+
+
+
 
 /*==================== MODAL ====================*/
 .modal {
@@ -654,6 +661,8 @@ img {
 .show-scroll{
   bottom: 5rem;
 }
+
+
 
 
 /*==================== MEDIA QUERIES ====================*/
