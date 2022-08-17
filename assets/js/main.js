@@ -57,7 +57,7 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 let swiper = new Swiper(".portfolio__container", {
   cssMode: true,
-  loop: true,
+  loop: false,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -79,7 +79,7 @@ function scrollActive() {
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 50;
-    sectionId = current.getAttribute("id");
+    var sectionId = current.getAttribute("id");
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document
