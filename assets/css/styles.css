@@ -512,7 +512,6 @@ img {
 }
 
 .portfolio__img{
-  width: 2/3;
   border-radius: .5rem;
   justify-self: center;
 }
